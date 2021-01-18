@@ -1,0 +1,20 @@
+title: Build a Wix Website
+description: >-
+  Wix powers millions of websites worldwide. This course consists of a series of
+  video tutorials aimed at teaching you the basics of creating a Wix website
+  from scratch. Get familiar with the platform, the Wix editor, and many other
+  things.
+template:
+  repo: build-a-wix-website-template
+  name: build-a-wix-website
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
